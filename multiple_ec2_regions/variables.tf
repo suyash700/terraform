@@ -16,7 +16,7 @@ variable "instances" {
 variable "public_key_path" {
   description = "Path to your SSH public key"
   type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE8fwIDq04Cp6qpM4TUk2AYDbh+7iVdy9QVrqxfZOwsG suyas@Suyash_LAP"
+  default     = "public -key "
 }
 
 variable "ami_ids" {
