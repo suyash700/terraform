@@ -1,14 +1,14 @@
 # Create key pair in default region
 resource "aws_key_pair" "default_region_key" {
   key_name   = "my_key"
-  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE8fwIDq04Cp6qpM4TUk2AYDbh+7iVdy9QVrqxfZOwsG suyas@Suyash_LAP"
+  public_key = "public -key"
 }
 
 # Create key pair in second region
 resource "aws_key_pair" "useast_region_key" {
   provider   = aws.useast
   key_name   = "my_key"
-  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE8fwIDq04Cp6qpM4TUk2AYDbh+7iVdy9QVrqxfZOwsG suyas@Suyash_LAP"
+  public_key = "public -key"
 }
 
 # Loop over instances in default region
