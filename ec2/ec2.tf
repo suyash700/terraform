@@ -1,6 +1,6 @@
 resource "aws_key_pair" "my_key_resource" {
   key_name   = "my_key"
-  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE8fwIDq04Cp6qpM4TUk2AYDbh+7iVdy9QVrqxfZOwsG suyas@Suyash_LAP"
+  public_key = "public key"
 }
 
 resource "aws_default_vpc" "default" {
